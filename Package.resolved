@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": "main",
+          "revision": "986d191f94cec88f6350056da59c2e59e83d1229",
+          "version": null
+        }
+      },
+      {
+        "package": "Benchmark",
+        "repositoryURL": "https://github.com/google/swift-benchmark",
+        "state": {
+          "branch": null,
+          "revision": "8e0ef8bb7482ab97dcd2cd1d6855bd38921c345d",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "swift-models",
+        "repositoryURL": "https://github.com/tensorflow/swift-models",
+        "state": {
+          "branch": "main",
+          "revision": "2fb0b92e1291b730fd1a5cd8a3b107c8e75c7d7a",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftProtobuf",
+        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "state": {
+          "branch": null,
+          "revision": "bfe4255ff60f22a41cafa113059668571ed5d461",
+          "version": "1.16.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
