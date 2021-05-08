@@ -1,5 +1,9 @@
-# Deep Learning with Swift for TensorFlow
+# Deep Learning with Swift for TensorFlow 📖
 Official source code repository for "[Deep Learning with Swift for TensorFlow](https://link.springer.com/book/10.1007%2F978-1-4842-6330-3)" book.
+
+[<img src="9781484263297.jpg" alt="Book cover" width="200"/>](https://link.springer.com/book/10.1007%2F978-1-4842-6330-3)
+
+**🛍 @ Amazon ([Paperback](https://www.amazon.com/Deep-Learning-Swift-TensorFlow-Differentiable/dp/1484263294/ref=sr_1_1?dchild=1&keywords=rahul+bhalley&qid=1620468163&sr=8-1) / [Kindle](https://www.amazon.com/Deep-Learning-Swift-TensorFlow-Differentiable-ebook/dp/B08T24JX6F/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1620468163&sr=8-1)) / [ Books](https://books.apple.com/us/book/deep-learning-with-swift-for-tensorflow/id1548806893) / [Apress](https://www.apress.com/us/book/9781484263297) / [SpringerLink](https://link.springer.com/book/10.1007%2F978-1-4842-6330-3)**
 
 ## Book Details
 
@@ -281,6 +285,14 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 <hr>
 
+## Setup
+
+- First, you should install the latest Swift for TensorFlow [toolchain](https://github.com/tensorflow/swift/blob/main/Installation.md#releases).
+- But to run only differentiation-specific code (for instance, the source code of Differentiable Programming chapter) not requiring deep learning features, simply install the latest Swift toolchain snapshot from [Swift.org](https://swift.org/download/#snapshots) under Trunk Development (main) section. (_The future differentiation feature updates will be posted on this website and will go through the standard [Swift Evolution process](https://forums.swift.org/t/differentiable-programming-for-gradient-based-machine-learning/42147)._)
+- Then you must select the newly installed toolchain in Xcode from `Preferences (Command + ,) > Components > Toolchains > (Swift for TensorFlow or Swift Development Snapshot)`.
+
+<hr>
+
 ## Executable Source Code
 
 This Swift package offers various executable targets listed in [Package.swift](https://github.com/rahulbhalley/deep-learning-with-swift-for-tensorflow-book/blob/main/Package.swift).
@@ -333,7 +345,7 @@ This Swift package offers various executable targets listed in [Package.swift](h
 
 ### Running in Xcode
 
-Select the executable target (for instance, `AlgorithmicDifferentiation`) from the scheme drop-down menu and then click the play/run button. The result should be presented in console.
+Select the executable target (for instance, `AlgorithmicDifferentiation`) from the scheme drop-down menu and then click the Run button. And result should be presented in the console.
 
 ### Running in Terminal
 
@@ -346,3 +358,7 @@ Then run the following command in terminal.
 ```
 swift run AlgorithmicDifferentiation
 ```
+
+<hr>
+
+**Note**: This Swift package was tested on Xcode 12.5 running on macOS version 11.3. It should also work right out of the box on Linux distributions.
