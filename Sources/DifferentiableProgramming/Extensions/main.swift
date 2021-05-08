@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-27**. Extend Int to mutate its value when raised to some power
+// MARK: Listing 3-27. Extend Int to mutate its value when raised to some power
+
 extension Int {
     mutating func raised(to power: Self) {
         assert(power > 0, "`power` must be a non-negative integer.")

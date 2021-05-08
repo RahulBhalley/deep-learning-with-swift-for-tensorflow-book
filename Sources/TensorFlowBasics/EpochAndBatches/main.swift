@@ -8,7 +8,8 @@
 import Datasets
 import TensorFlow
 
-/// **Listing 4-2**. Demonstrate epochs and batches
+// MARK: Listing 4-2. Demonstrate epochs and batches
+
 let dataset = MNIST(batchSize: 64)
 let epochCount = 2
 

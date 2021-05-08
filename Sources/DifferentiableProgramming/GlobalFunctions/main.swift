@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-18**. Declare a global function
+// MARK: Listing 3-18. Declare a global function
+
 enum Vehicle {
     case car, train
 }

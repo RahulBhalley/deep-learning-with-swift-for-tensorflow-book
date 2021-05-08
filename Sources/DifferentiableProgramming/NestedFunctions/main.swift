@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-19**. Declare a nested function
+// MARK: Listing 3-19. Declare a nested function
+
 func outerFunction() -> () -> Int {
     func innerFunction() -> Int {
         print("Running inner function.")

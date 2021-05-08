@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-16**. Use a continue control transfer statement in a for-in loop
+// MARK: Listing 3-16. Use a continue control transfer statement in a for-in loop
+
 let totalSteps = 50
 let range = stride(from: 0, to: totalSteps, by: 10)
 print("range: \(Array(range))")

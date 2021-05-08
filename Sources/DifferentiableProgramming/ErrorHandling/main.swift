@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-34**. Respond to possible errors when requesting a webpage
+// MARK: Listing 3-34. Respond to possible errors when requesting a webpage
+
 enum RequestError: Error {
     case noInternet
     case notFound

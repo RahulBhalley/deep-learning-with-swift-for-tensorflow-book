@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-23**. Declare a nested structure and initialize its instances
+// MARK: Listing 3-23. Declare a nested structure and initialize its instances
+
 struct Mammal {
     enum LivingZone {
         case land, water
@@ -18,7 +19,8 @@ let human = Mammal(livingZone: .land, legsCount: 2)
 let injuredHuman = Mammal(livingZone: .land, legsCount: 0)
 let fish = Mammal(livingZone: .water, legsCount: nil)
 
-/// **Listing 3-24**. Extend `Mammal` to include a curated description
+// MARK: Listing 3-24. Extend `Mammal` to include a curated description
+
 extension Mammal {
     var description: String {
         var text = "Lives \(livingZone == .land ? "on" : "in") \(livingZone)"

@@ -7,7 +7,8 @@
 
 import TensorFlow
 
-/// **Listing 4-11**. Define the dense layer
+// MARK: Listing 4-11. Define the dense layer
+
 struct DenseLayer<Scalar: TensorFlowFloatingPoint>: Layer {
     typealias Input = Tensor<Scalar>
     typealias Output = Tensor<Scalar>
@@ -26,13 +27,14 @@ struct DenseLayer<Scalar: TensorFlowFloatingPoint>: Layer {
     }
 }
 
-/// **Listing 4-12**. Define the swish activation function
+// MARK: Listing 4-12. Define the swish activation function
 @differentiable
 func swishActivation<Scalar: TensorFlowFloatingPoint>(_ input: Tensor<Scalar>) -> Tensor<Scalar> {
     input * sigmoid(input)
 }
 
-/// **Listing 4-13**. Define the L2 loss function
+// MARK: Listing 4-13. Define the L2 loss function
+
 @differentiable(wrt: logits)
 func l1Loss<Scalar: TensorFlowFloatingPoint>(
     logits: Tensor<Scalar>,
@@ -41,7 +43,8 @@ func l1Loss<Scalar: TensorFlowFloatingPoint>(
     abs(labels - logits).mean()
 }
 
-/// **Listing 4-14**. Define the stochastic gradient descent optimizer
+// MARK: Listing 4-14. Define the stochastic gradient descent optimizer
+
 class SGDOptimizer<Model: Differentiable>: Optimizer
 where Model.TangentVector: VectorProtocol & ElementaryFunctions & KeyPathIterable, Model.TangentVector.VectorSpaceScalar == Float
 {

@@ -9,7 +9,8 @@ import Datasets
 import TensorFlow
 import TrainingLoop
 
-/// **Listing 4-3**. Define the `LeNet` model by conforming to the `Layer` protocol
+// MARK: Listing 4-3. Define the `LeNet` model by conforming to the `Layer` protocol
+
 struct LeNet: Layer {
     typealias Input = Tensor<Float>
     typealias Output = Tensor<Float>
@@ -33,7 +34,7 @@ struct LeNet: Layer {
     }
 }
 
-/// **Listing4-10**. Training `LeNet` on `MNIST` with the `TrainingLoop` library
+// MARK: Listing 4-10. Training `LeNet` on `MNIST` with the `TrainingLoop` library
 
 // Configurations
 let epochs = 5

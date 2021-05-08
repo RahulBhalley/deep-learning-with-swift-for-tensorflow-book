@@ -116,5 +116,11 @@ let package = Package(
                     .product(name: "TrainingLoop", package: "swift-models"),
                 ],
                 path: "Sources/TensorFlowBasics/TrainingLoopExample"),
+        
+        // MARK: Chapter 5: Neural Networks
+        
+        .executableTarget(name: "InputOptimization",
+                          path: "Sources/NeuralNetworks/InputOptimization"),
+        
     ]
 )

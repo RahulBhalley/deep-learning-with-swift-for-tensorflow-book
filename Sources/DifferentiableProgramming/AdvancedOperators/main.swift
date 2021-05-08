@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-35**. Declare a structure and implement an advanced operator.
+// MARK: Listing 3-35. Declare a structure and implement an advanced operator
+
 struct Point3D {
     var (x, y, z) = (0.0, 0.0, 0.0)
     var description: String {

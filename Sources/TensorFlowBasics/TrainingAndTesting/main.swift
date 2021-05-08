@@ -10,7 +10,8 @@ import Datasets
 import Foundation
 import TensorFlow
 
-/// **Listing 4-3**. Define the `LeNet` model by conforming to the `Layer` protocol
+// MARK: Listing 4-3. Define the `LeNet` model by conforming to the `Layer` protocol
+
 struct LeNet: Layer {
     typealias Input = Tensor<Float>
     typealias Output = Tensor<Float>
@@ -34,13 +35,15 @@ struct LeNet: Layer {
     }
 }
 
-/// **Listing 4-4**. Conform `LeNet` to the `Checkpointable` protocol
+// MARK: Listing 4-4. Conform `LeNet` to the `Checkpointable` protocol
+
 extension LeNet: Checkpointable {}
 
-/// **Listing 4-5**. Declare directory location for checkpointing the model
+// MARK: Listing 4-5. Declare directory location for checkpointing the model
+
 let checkpointDirectory = URL(fileURLWithPath: "/Users/rahulbhalley/Desktop/Checkpoints", isDirectory: true)
 
-/// **Listing 4-6**. Train the LeNet model and save checkpoints
+// MARK: Listing 4-6. Train the LeNet model and save checkpoints
 
 // Define the default device
 let device = Device.defaultXLA
@@ -56,7 +59,8 @@ model = .init(copying: model, to: device)
 var optimizer = SGD(for: model, learningRate: 0.01, momentum: 0.9)
 optimizer = .init(copying: optimizer, to: device)
 
-/// **Listing 4-7**. Define one training step for the model
+// MARK: Listing 4-7. Define one training step for the model
+
 func trainingStep(samples: Tensor<Float>, labels: Tensor<Int32>) {
     // Compute gradients
     let 𝛁θmodel = gradient(at: model) { model -> Tensor<Float> in
@@ -67,7 +71,8 @@ func trainingStep(samples: Tensor<Float>, labels: Tensor<Int32>) {
     optimizer.update(&model, along: 𝛁θmodel)
 }
 
-/// **Listing 4-8**. Define a training loop executable for multiple epochs
+// MARK: Listing 4-8. Define a training loop executable for multiple epochs
+
 func trainingLoop(epochCount: Int = 5) {
     epochLoop: for (epochStep, epoch) in dataset.training.prefix(epochCount).enumerated() {
         batchLoop: for batch in epoch {
@@ -94,7 +99,8 @@ func trainingLoop(epochCount: Int = 5) {
 // Train the model
 trainingLoop()
 
-/// **Listing 4-9**. Define a computed property to calculate accuracy of the model on a validation set
+// MARK: Listing 4-9. Define a computed property to calculate accuracy of the model on a validation set
+
 var testAccuracy: Float {
     let totalSamples = 10000
     var correct = 0

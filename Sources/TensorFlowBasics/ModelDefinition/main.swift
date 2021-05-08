@@ -7,7 +7,8 @@
 
 import TensorFlow
 
-/// **Listing 4-3**. Define the `LeNet` model by conforming to the `Layer` protocol
+// MARK: Listing 4-3. Define the `LeNet` model by conforming to the `Layer` protocol
+
 struct LeNet: Layer {
     typealias Input = Tensor<Float>
     typealias Output = Tensor<Float>

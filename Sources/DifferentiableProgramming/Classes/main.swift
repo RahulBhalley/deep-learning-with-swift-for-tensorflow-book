@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-25**. Declare the Rocket class with stored and computed properties and an initializer
+// MARK: Listing 3-25. Declare the Rocket class with stored and computed properties and an initializer
+
 class Rocket {
     var name: String? = nil
     var vacuumThrust: Int = 0
@@ -25,7 +26,8 @@ print(rocketB.description)
 
 print()
 
-/// **Listing 3-26**. Inherit features of Rocket and refine to carry payload
+// MARK: Listing 3-26. Inherit features of Rocket and refine to carry payload
+
 final class CargoRocket: Rocket {
     var payload: Int
     override var description: String {

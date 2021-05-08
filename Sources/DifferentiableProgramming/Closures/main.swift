@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-20**. Declare a closure to return Bool representing an integer’s positivity
+// MARK: Listing 3-20. Declare a closure to return Bool representing an integer’s positivity
+
 print("Listing 3-20. Declare a closure to return Bool representing an integer’s positivity")
 let isPositive = { (_ x: Int) -> Bool in
     return x > 0
@@ -14,7 +15,8 @@ print(isPositive(-5))
 
 print()
 
-/// **Listing 3-21**. Demonstrate trailing closures
+// MARK: Listing 3-21. Demonstrate trailing closures
+
 func isEven(_ x: Int, also hasProperty: (Int) -> Bool) -> Bool {
     x % 2 == 0 && hasProperty(x)
 }

@@ -5,6 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
+// MARK: Listing 3-1. Demonstrate operator-overloaded forward-mode algorithmic differentiation using dual numbers
+
 struct DualNumber<T: FloatingPoint> {
     var value: T
     var derivative: T

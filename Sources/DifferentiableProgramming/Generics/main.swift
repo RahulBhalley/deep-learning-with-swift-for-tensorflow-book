@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-25**. Declare the Rocket class with stored and computed properties and an initializer
+// MARK: Listing 3-25. Declare the Rocket class with stored and computed properties and an initializer
+
 class Rocket {
     var name: String? = nil
     var vacuumThrust: Int = 0
@@ -18,7 +19,8 @@ class Rocket {
     }
 }
 
-/// **Listing 3-26**. Inherit features of Rocket and refine to carry payload
+// MARK: Listing 3-26. Inherit features of Rocket and refine to carry payload
+
 final class CargoRocket: Rocket {
     var payload: Int
     override var description: String {
@@ -33,7 +35,8 @@ final class CargoRocket: Rocket {
 var falcon9 = CargoRocket(name: "Falcon 9", vacuumThrust: 8_227, payload: 22_800)
 var falconHeavy = CargoRocket(name: "Falcon Heavy", vacuumThrust: 24_681, payload: 63_800)
 
-/// **Listing 3-30**. Swap values of two variables of the same type
+// MARK: Listing 3-30. Swap values of two variables of the same type
+
 func swapValues<T>(_ x: inout T, _ y: inout T) {
     let temporaryX = x
     x = y
@@ -53,7 +56,8 @@ print(falconHeavy.description)
 
 print()
 
-/// **Listing 3-31**. Find common and unique elements from two `Array<Int>` instances
+// MARK: Listing 3-31. Find common and unique elements from two `Array<Int>` instances
+
 func allCommonAndUniqueElements<T: Sequence, U: Sequence> (_ left: T, _ right: U) -> [T.Element]
 where T.Element: Equatable, T.Element == U.Element {
     var result = [T.Element]()
@@ -74,7 +78,8 @@ print(commonNumbers)
 
 print()
 
-/// **Listing 3-32**. Find common and unique elements from two `Array<Character>` or String instances
+// MARK: Listing 3-32. Find common and unique elements from two `Array<Character>` or `String` instances
+
 let machineLearning = "machine learning"
 let deepLearning = "deep learning"
 let commonCharacters = allCommonAndUniqueElements(machineLearning, deepLearning)
@@ -82,7 +87,8 @@ print(commonCharacters)
 
 print()
 
-/// **Listing 3-33**. Demonstrate the generic type
+// MARK: Listing 3-33. Demonstrate the generic type
+
 struct Pair<T, U> {
     var x: T
     var y: U

@@ -5,7 +5,8 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-22**. Declare an enumeration and print a statement according to an instance
+// MARK: Listing 3-22. Declare an enumeration and print a statement according to an instance
+
 enum Rainbow {
     case violet, indigo, blue, green, yellow, orange, red
 }

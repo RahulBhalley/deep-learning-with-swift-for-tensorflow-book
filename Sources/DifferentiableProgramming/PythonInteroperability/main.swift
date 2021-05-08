@@ -5,10 +5,12 @@
 //  Created by Rahul Bhalley on 07/05/21.
 //
 
-/// **Listing 3-42**. Import the PythonKit library
+// MARK: Listing 3-42. Import the PythonKit library
+
 import PythonKit
 
-/// **Listing 3-43**. Add two NumPy arrays
+// MARK: Listing 3-43. Add two NumPy arrays
+
 let np: PythonObject = Python.import("numpy")
 
 let x = np.array([1, 4, 2, 5], dtype: np.float32)
@@ -17,12 +19,14 @@ print(x * y)
 
 print()
 
-/// **Listing 3-44**. Demonstrate the Python namespace
+// MARK: Listing 3-44. Demonstrate the Python namespace
+
 let myNamePy: PythonObject = "Rahul Bhalley"
 print("myNamePy Swift type: \(type(of: myNamePy))")
 print("myNamePy Python type: \(Python.type(myNamePy))")
 
-/// **Listing 3-45**. Demonstrate operations on `PythonObject`s
+// MARK: Listing 3-45. Demonstrate operations on `PythonObject`s
+
 var firstNumber: PythonObject = 30
 var secondNumber: PythonObject = 6
 let result = secondNumber / firstNumber
@@ -32,7 +36,7 @@ print("Python type is \(Python.type(result)).")
 
 print()
 
-/// **Listing 3-46**. Type conversions between Swift types and `PythonObject`
+// MARK: Listing 3-46. Type conversions between Swift types and `PythonObject`
 
 // Conversion from Swift to Python type
 let swiftFive: Int = 5 // Swift Int value
@@ -49,7 +53,7 @@ if let pyDescription = pyDescription {
 
 print()
 
-/// **Listing 3-47**. Plot an exponential function
+// MARK: Listing 3-47. Plot an exponential function
 
 // Import Python libraries
 let plt = Python.import("matplotlib.pyplot")

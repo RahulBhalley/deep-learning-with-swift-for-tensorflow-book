@@ -7,13 +7,15 @@
 
 import _Differentiation
 
-/// **Listing 3-37**. Show that differentiation of an Int instance is not possible
+// MARK: Listing 3-37. Show that differentiation of an Int instance is not possible
+
 // @differentiable
 // func failedDifferentiation(_ input: Float) -> Float {
 //     Float(Int(input))
 // }
 
-/// **Listing 3-38**. Make the Point3D structure differentiable
+// MARK: Listing 3-38. Make the Point3D structure differentiable
+
 struct Point3D: Differentiable, AdditiveArithmetic {
     var (x, y, z) = (0.0, 0.0, 0.0)
     @noDerivative
@@ -32,8 +34,8 @@ print("𝛁sum: \(result.gradient.description)")
 
 print()
 
-/// **Listing 3-39**. Declare and demonstrate the usage of the `@differentiable` declaration
-/// attribute on a computed property
+// MARK: Listing 3-39. Declare and demonstrate the usage of the `@differentiable` declaration attribute on a computed property
+
 extension Double {
     @differentiable
     var cubed: Self { self * self * self }
@@ -46,7 +48,8 @@ print("Gradient of x^3 at \(x) is \(grad)")
 
 print()
 
-/// **Listing 3-40**. Demonstrate the declaration of custom derivatives in reverse-mode differentiation
+// MARK: Listing 3-40. Demonstrate the declaration of custom derivatives in reverse-mode differentiation
+
 func cube(_ x: Float) -> Float {
     x * x * x
 }
@@ -65,7 +68,8 @@ print("Before customization, df/dx =", gradient(at: anotherX, in: { x in
 
 print()
 
-/// **Listing 3-41**. Demonstrate the stopping of gradient computation through a graph
+// MARK: Listing 3-41. Demonstrate the stopping of gradient computation through a graph
+
 let yetAnotherX: Float = 5
 let result1 = valueWithGradient(at: yetAnotherX) { x in
     x * x * withoutDerivative(at: x)

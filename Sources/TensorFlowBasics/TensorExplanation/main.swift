@@ -7,7 +7,8 @@
 
 import TensorFlow
 
-/// **Listing 4-1**. Declare Tensor instances of various dimensions
+// MARK: Listing 4-1. Declare Tensor instances of various dimensions
+
 let scalar = Tensor<Float>(10)
 let vector = Tensor<Float>(ones: [5])
 let matrix = Tensor<Float>(zeros: [4, 3])
