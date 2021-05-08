@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -16,101 +16,101 @@ let package = Package(
         
         // MARK: Chapter 3: Differentiable Programming
         
-        .target(name: "AdvancedOperators",
+        .executableTarget(name: "AdvancedOperators",
                 path: "Sources/DifferentiableProgramming/AdvancedOperators"),
         
-        .target(name: "AlgorithmicDifferentiation",
+        .executableTarget(name: "AlgorithmicDifferentiation",
                 path: "Sources/DifferentiableProgramming/AlgorithmicDifferentiation"),
         
-        .target(name: "Arrays",
+        .executableTarget(name: "Arrays",
                 path: "Sources/DifferentiableProgramming/Arrays"),
         
-        .target(name: "Classes",
+        .executableTarget(name: "Classes",
                 path: "Sources/DifferentiableProgramming/Classes"),
         
-        .target(name: "Closures",
+        .executableTarget(name: "Closures",
                 path: "Sources/DifferentiableProgramming/Closures"),
         
-        .target(name: "ConditionalStatements",
+        .executableTarget(name: "ConditionalStatements",
                 path: "Sources/DifferentiableProgramming/ConditionalStatements"),
         
-        .target(name: "ControlTransfer",
+        .executableTarget(name: "ControlTransfer",
                 path: "Sources/DifferentiableProgramming/ControlTransfer"),
         
-        .target(name: "Dictionaries",
+        .executableTarget(name: "Dictionaries",
                 path: "Sources/DifferentiableProgramming/Dictionaries"),
         
-        .target(name: "Differentiation",
+        .executableTarget(name: "Differentiation",
                 path: "Sources/DifferentiableProgramming/Differentiation"),
         
-        .target(name: "EarlyExit",
+        .executableTarget(name: "EarlyExit",
                 path: "Sources/DifferentiableProgramming/EarlyExit"),
         
-        .target(name: "Enumerations",
+        .executableTarget(name: "Enumerations",
                 path: "Sources/DifferentiableProgramming/Enumerations"),
         
-        .target(name: "ErrorHandling",
+        .executableTarget(name: "ErrorHandling",
                 path: "Sources/DifferentiableProgramming/ErrorHandling"),
         
-        .target(name: "Extensions",
+        .executableTarget(name: "Extensions",
                 path: "Sources/DifferentiableProgramming/Extensions"),
         
-        .target(name: "Generics",
+        .executableTarget(name: "Generics",
                 path: "Sources/DifferentiableProgramming/Generics"),
         
-        .target(name: "GlobalFunctions",
+        .executableTarget(name: "GlobalFunctions",
                 path: "Sources/DifferentiableProgramming/GlobalFunctions"),
         
-        .target(name: "Loops",
+        .executableTarget(name: "Loops",
                 path: "Sources/DifferentiableProgramming/Loops"),
         
-        .target(name: "NestedFunctions",
+        .executableTarget(name: "NestedFunctions",
                 path: "Sources/DifferentiableProgramming/NestedFunctions"),
         
-        .target(name: "Protocols",
+        .executableTarget(name: "Protocols",
                 path: "Sources/DifferentiableProgramming/Protocols"),
         
-        .target(name: "PythonInteroperability",
+        .executableTarget(name: "PythonInteroperability",
                 path: "Sources/DifferentiableProgramming/PythonInteroperability"),
         
-        .target(name: "Sets",
+        .executableTarget(name: "Sets",
                 path: "Sources/DifferentiableProgramming/Sets"),
         
-        .target(name: "Structures",
+        .executableTarget(name: "Structures",
                 path: "Sources/DifferentiableProgramming/Structures"),
         
-        .target(name: "Values",
+        .executableTarget(name: "Values",
                 path: "Sources/DifferentiableProgramming/Values"),
         
         // MARK: Chapter 4: TensorFlow Basics
         
-        .target(name: "EpochAndBatches",
+        .executableTarget(name: "EpochAndBatches",
                 dependencies: [
                     .product(name: "Datasets", package: "swift-models")
                 ],
                 path: "Sources/TensorFlowBasics/EpochAndBatches"),
         
-        .target(name: "FromScratchForResearch",
+        .executableTarget(name: "FromScratchForResearch",
                 dependencies: [
                     .product(name: "Datasets", package: "swift-models"),
                     .product(name: "TrainingLoop", package: "swift-models"),
                 ],
                 path: "Sources/TensorFlowBasics/FromScratchForResearch"),
         
-        .target(name: "ModelDefinition",
+        .executableTarget(name: "ModelDefinition",
                 path: "Sources/TensorFlowBasics/ModelDefinition"),
         
-        .target(name: "TensorExplanation",
+        .executableTarget(name: "TensorExplanation",
                 path: "Sources/TensorFlowBasics/TensorExplanation"),
         
-        .target(name: "TrainingAndTesting",
+        .executableTarget(name: "TrainingAndTesting",
                 dependencies: [
                     .product(name: "Checkpoints", package: "swift-models"),
                     .product(name: "Datasets", package: "swift-models"),
                 ],
                 path: "Sources/TensorFlowBasics/TrainingAndTesting"),
         
-        .target(name: "TrainingLoopExample",
+        .executableTarget(name: "TrainingLoopExample",
                 dependencies: [
                     .product(name: "Datasets", package: "swift-models"),
                     .product(name: "TrainingLoop", package: "swift-models"),
