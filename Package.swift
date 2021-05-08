@@ -17,110 +17,127 @@ let package = Package(
         // MARK: Chapter 3: Differentiable Programming
         
         .executableTarget(name: "AdvancedOperators",
-                path: "Sources/DifferentiableProgramming/AdvancedOperators"),
+                          path: "Sources/DifferentiableProgramming/AdvancedOperators"),
         
         .executableTarget(name: "AlgorithmicDifferentiation",
-                path: "Sources/DifferentiableProgramming/AlgorithmicDifferentiation"),
+                          path: "Sources/DifferentiableProgramming/AlgorithmicDifferentiation"),
         
         .executableTarget(name: "Arrays",
-                path: "Sources/DifferentiableProgramming/Arrays"),
+                          path: "Sources/DifferentiableProgramming/Arrays"),
         
         .executableTarget(name: "Classes",
-                path: "Sources/DifferentiableProgramming/Classes"),
+                          path: "Sources/DifferentiableProgramming/Classes"),
         
         .executableTarget(name: "Closures",
-                path: "Sources/DifferentiableProgramming/Closures"),
+                          path: "Sources/DifferentiableProgramming/Closures"),
         
         .executableTarget(name: "ConditionalStatements",
-                path: "Sources/DifferentiableProgramming/ConditionalStatements"),
+                          path: "Sources/DifferentiableProgramming/ConditionalStatements"),
         
         .executableTarget(name: "ControlTransfer",
-                path: "Sources/DifferentiableProgramming/ControlTransfer"),
+                          path: "Sources/DifferentiableProgramming/ControlTransfer"),
         
         .executableTarget(name: "Dictionaries",
-                path: "Sources/DifferentiableProgramming/Dictionaries"),
+                          path: "Sources/DifferentiableProgramming/Dictionaries"),
         
         .executableTarget(name: "Differentiation",
-                path: "Sources/DifferentiableProgramming/Differentiation"),
+                          path: "Sources/DifferentiableProgramming/Differentiation"),
         
         .executableTarget(name: "EarlyExit",
-                path: "Sources/DifferentiableProgramming/EarlyExit"),
+                          path: "Sources/DifferentiableProgramming/EarlyExit"),
         
         .executableTarget(name: "Enumerations",
-                path: "Sources/DifferentiableProgramming/Enumerations"),
+                          path: "Sources/DifferentiableProgramming/Enumerations"),
         
         .executableTarget(name: "ErrorHandling",
-                path: "Sources/DifferentiableProgramming/ErrorHandling"),
+                          path: "Sources/DifferentiableProgramming/ErrorHandling"),
         
         .executableTarget(name: "Extensions",
-                path: "Sources/DifferentiableProgramming/Extensions"),
+                          path: "Sources/DifferentiableProgramming/Extensions"),
         
         .executableTarget(name: "Generics",
-                path: "Sources/DifferentiableProgramming/Generics"),
+                          path: "Sources/DifferentiableProgramming/Generics"),
         
         .executableTarget(name: "GlobalFunctions",
-                path: "Sources/DifferentiableProgramming/GlobalFunctions"),
+                          path: "Sources/DifferentiableProgramming/GlobalFunctions"),
         
         .executableTarget(name: "Loops",
-                path: "Sources/DifferentiableProgramming/Loops"),
+                          path: "Sources/DifferentiableProgramming/Loops"),
         
         .executableTarget(name: "NestedFunctions",
-                path: "Sources/DifferentiableProgramming/NestedFunctions"),
+                          path: "Sources/DifferentiableProgramming/NestedFunctions"),
         
         .executableTarget(name: "Protocols",
-                path: "Sources/DifferentiableProgramming/Protocols"),
+                          path: "Sources/DifferentiableProgramming/Protocols"),
         
         .executableTarget(name: "PythonInteroperability",
-                path: "Sources/DifferentiableProgramming/PythonInteroperability"),
+                          path: "Sources/DifferentiableProgramming/PythonInteroperability"),
         
         .executableTarget(name: "Sets",
-                path: "Sources/DifferentiableProgramming/Sets"),
+                          path: "Sources/DifferentiableProgramming/Sets"),
         
         .executableTarget(name: "Structures",
-                path: "Sources/DifferentiableProgramming/Structures"),
+                          path: "Sources/DifferentiableProgramming/Structures"),
         
         .executableTarget(name: "Values",
-                path: "Sources/DifferentiableProgramming/Values"),
+                          path: "Sources/DifferentiableProgramming/Values"),
         
         // MARK: Chapter 4: TensorFlow Basics
         
         .executableTarget(name: "EpochAndBatches",
-                dependencies: [
-                    .product(name: "Datasets", package: "swift-models")
-                ],
-                path: "Sources/TensorFlowBasics/EpochAndBatches"),
+                          dependencies: [
+                            .product(name: "Datasets", package: "swift-models")
+                          ],
+                          path: "Sources/TensorFlowBasics/EpochAndBatches"),
         
         .executableTarget(name: "FromScratchForResearch",
-                dependencies: [
-                    .product(name: "Datasets", package: "swift-models"),
-                    .product(name: "TrainingLoop", package: "swift-models"),
-                ],
-                path: "Sources/TensorFlowBasics/FromScratchForResearch"),
+                          dependencies: [
+                            .product(name: "Datasets", package: "swift-models"),
+                            .product(name: "TrainingLoop", package: "swift-models"),
+                          ],
+                          path: "Sources/TensorFlowBasics/FromScratchForResearch"),
         
         .executableTarget(name: "ModelDefinition",
-                path: "Sources/TensorFlowBasics/ModelDefinition"),
+                          path: "Sources/TensorFlowBasics/ModelDefinition"),
         
         .executableTarget(name: "TensorExplanation",
-                path: "Sources/TensorFlowBasics/TensorExplanation"),
+                          path: "Sources/TensorFlowBasics/TensorExplanation"),
         
         .executableTarget(name: "TrainingAndTesting",
-                dependencies: [
-                    .product(name: "Checkpoints", package: "swift-models"),
-                    .product(name: "Datasets", package: "swift-models"),
-                ],
-                path: "Sources/TensorFlowBasics/TrainingAndTesting"),
+                          dependencies: [
+                            .product(name: "Checkpoints", package: "swift-models"),
+                            .product(name: "Datasets", package: "swift-models"),
+                          ],
+                          path: "Sources/TensorFlowBasics/TrainingAndTesting"),
         
         .executableTarget(name: "TrainingLoopExample",
-                dependencies: [
-                    .product(name: "Datasets", package: "swift-models"),
-                    .product(name: "TrainingLoop", package: "swift-models"),
-                ],
-                path: "Sources/TensorFlowBasics/TrainingLoopExample"),
+                          dependencies: [
+                            .product(name: "Datasets", package: "swift-models"),
+                            .product(name: "TrainingLoop", package: "swift-models"),
+                          ],
+                          path: "Sources/TensorFlowBasics/TrainingLoopExample"),
         
         // MARK: Chapter 5: Neural Networks
         
         .executableTarget(name: "InputOptimization",
                           path: "Sources/NeuralNetworks/InputOptimization"),
         
+        .executableTarget(name: "LinearRegression",
+                          path: "Sources/NeuralNetworks/LinearRegression"),
+        
+        .executableTarget(name: "ParametersOptimization",
+                          path: "Sources/NeuralNetworks/ParametersOptimization"),
+        
+        .executableTarget(name: "PolynomialRegression",
+                          path: "Sources/NeuralNetworks/PolynomialRegression"),
+        
+        // MARK: Chapter 6: Computer Vision
+        
+        .executableTarget(name: "ImageRecognition",
+                          dependencies: [
+                            .product(name: "Datasets", package: "swift-models"),
+                            .product(name: "TrainingLoop", package: "swift-models"),
+                          ],
+                          path: "Sources/ComputerVision/ImageRecognition"),
     ]
 )
