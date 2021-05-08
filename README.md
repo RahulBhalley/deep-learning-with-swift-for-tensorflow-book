@@ -359,6 +359,18 @@ Then run the following command in terminal.
 swift run AlgorithmicDifferentiation
 ```
 
+The following output will be displayed.
+```
+expression value: 30.0
+expression derivative: 28.0
+```
+
+Just replace `AlgorithmicDifferentiation` with any executable target you wish to run.
+
 <hr>
 
 **Note**: This Swift package was tested on Xcode 12.5 running on macOS version 11.3. It should also work right out of the box on Linux distributions.
+
+## Contact
+
+📫  [rahulbhalley@icloud.com](mailto:rahulbhalley@icloud.com)
