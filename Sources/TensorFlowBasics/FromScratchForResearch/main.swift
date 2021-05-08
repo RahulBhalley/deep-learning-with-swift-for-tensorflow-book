@@ -28,6 +28,7 @@ struct DenseLayer<Scalar: TensorFlowFloatingPoint>: Layer {
 }
 
 // MARK: Listing 4-12. Define the swish activation function
+
 @differentiable
 func swishActivation<Scalar: TensorFlowFloatingPoint>(_ input: Tensor<Scalar>) -> Tensor<Scalar> {
     input * sigmoid(input)
