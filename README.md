@@ -285,22 +285,6 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 This Swift package offers various executable targets listed in [Package.swift](https://github.com/rahulbhalley/deep-learning-with-swift-for-tensorflow-book/blob/main/Package.swift).
 
-### Running in Xcode
-
-Select the executable target (for instance, `AlgorithmicDifferentiation`) from the scheme drop-down menu and then click the play/run button. The result should be presented in console.
-
-### Running in Terminal
-
-To execute any of them first enter into this package's root directory.
-```
-cd deep-learning-with-swift-for-tensorflow-book
-```
-
-Then run the following command in terminal.
-```
-swift run AlgorithmicDifferentiation
-```
-
 <details>
   <summary>Show all executable targets</summary>
 
@@ -346,3 +330,19 @@ swift run AlgorithmicDifferentiation
 - `ImageRecognition`
 
 </details>
+
+### Running in Xcode
+
+Select the executable target (for instance, `AlgorithmicDifferentiation`) from the scheme drop-down menu and then click the play/run button. The result should be presented in console.
+
+### Running in Terminal
+
+To execute any of them first enter into this package's root directory.
+```
+cd deep-learning-with-swift-for-tensorflow-book
+```
+
+Then run the following command in terminal.
+```
+swift run AlgorithmicDifferentiation
+```
