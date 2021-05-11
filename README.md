@@ -39,7 +39,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 ### Chapter 1: Machine Learning Basics
 
-&emsp;1.1 Machine Learning
+&emsp;1.1 **Machine Learning**
 
 &emsp;&emsp;1.1.1 Experience
 
@@ -47,7 +47,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;1.1.3 Performance Measure
 
-&emsp;1.2 Machine Learning Paradigms
+&emsp;1.2 **Machine Learning Paradigms**
 
 &emsp;&emsp;1.2.1 Supervised Learning
 
@@ -57,9 +57,9 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;1.2.4 Reinforcement Learning 
 
-&emsp;1.3 Maximum Likelihood Estimation
+&emsp;1.3 **Maximum Likelihood Estimation**
 
-&emsp;1.4 Elements of a Machine Learning Algorithm
+&emsp;1.4 **Elements of a Machine Learning Algorithm**
 
 &emsp;&emsp;1.4.1 Data
 
@@ -71,9 +71,9 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;1.4.5 Regularizer
 
-&emsp;1.5 Bias and Variance Trade-Off
+&emsp;1.5 **Bias and Variance Trade-Off**
 
-&emsp;1.6 Why Deep Learning?
+&emsp;1.6 **Why Deep Learning?**
 
 &emsp;&emsp;1.6.1 Curse of Dimensionality
 
@@ -81,11 +81,11 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;1.6.3 Deep Learning Advantages
 
-&emsp;1.7 Summary
+&emsp;1.7 **Summary**
 
 ### Chapter 2: Essential Math
 
-&emsp;2.1 Linear Algebra
+&emsp;2.1 **Linear Algebra**
 
 &emsp;&emsp;2.1.1 Matrices and Vectors
 
@@ -95,7 +95,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;2.1.4 Norms
 
-&emsp;2.2 Probability Theory
+&emsp;2.2 **Probability Theory**
 
 &emsp;&emsp;2.2.1 Joint Probability
 
@@ -107,7 +107,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;2.2.5 Bayes Rule
 
-&emsp;2.3 Differential Calculus
+&emsp;2.3 **Differential Calculus**
 
 &emsp;&emsp;2.3.1 Function
 
@@ -119,15 +119,15 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;2.3.5 Differentiation of Matrix Function
 
-&emsp;2.4 Summary
+&emsp;2.4 **Summary**
 
 ### Chapter 3: Differentiable Programming
 
-&emsp;3.1 Swift is Everywhere
+&emsp;3.1 **Swift is Everywhere**
 
-&emsp;3.2 Swift for TensorFlow
+&emsp;3.2 **Swift for TensorFlow**
 
-&emsp;3.3 Algorithmic Differentiation
+&emsp;3.3 **Algorithmic Differentiation**
 
 &emsp;&emsp;3.3.1 Programming Approaches
 
@@ -135,7 +135,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;3.3.3 Implementation Approaches
 
-&emsp;3.4 Swift Language
+&emsp;3.4 **Swift Language**
 
 &emsp;&emsp;3.4.1 Values
 
@@ -155,25 +155,25 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;3.4.9 Differentiation
 
-&emsp;3.5 Python Interoperability
+&emsp;3.5 **Python Interoperability**
 
-&emsp;3.6 Summary
+&emsp;3.6 **Summary**
 
 ### Chapter 4: TensorFlow Basics
 
-&emsp;4.1 Tensor
+&emsp;4.1 **Tensor**
 
-&emsp;4.2 Dataset Loading
+&emsp;4.2 **Dataset Loading**
 
 &emsp;&emsp;4.2.1 Epochs and Batches
 
-&emsp;4.3 Defining Model
+&emsp;4.3 **Defining Model**
 
 &emsp;&emsp;4.3.1 Neural Network Protocols
 
 &emsp;&emsp;4.3.2 Sequence of Layers
 
-&emsp;4.4 Training and Testing
+&emsp;4.4 **Training and Testing**
 
 &emsp;&emsp;4.4.1 Checkpointing
 
@@ -181,7 +181,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;4.4.3 TrainingLoop
 
-&emsp;4.5 From Scratch for Research
+&emsp;4.5 **From Scratch for Research**
 
 &emsp;&emsp;4.5.1 Layer
 
@@ -191,11 +191,11 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;4.5.4 Optimizer
 
-&emsp;4.6 Summary
+&emsp;4.6 **Summary**
 
 ### Chapter 5: Neural Networks
 
-&emsp;5.1 Gradient-Based Optimization
+&emsp;5.1 **Gradient-Based Optimization**
 
 &emsp;&emsp;5.1.1 Maxima, Minima, and Saddle Points
 
@@ -203,17 +203,17 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;5.1.3 Parameters Optimization
 
-&emsp;5.2 Linear Models
+&emsp;5.2 **Linear Models**
 
 &emsp;&emsp;5.2.1 Regression
 
 &emsp;&emsp;5.2.2 Classification
 
-&emsp;5.3 Deep Neural Network
+&emsp;5.3 **Deep Neural Network**
 
 &emsp;&emsp;5.3.1 Dense Neural Network
 
-&emsp;5.4 Activation Functions
+&emsp;5.4 **Activation Functions**
 
 &emsp;&emsp;5.4.1 Sigmoid
 
@@ -227,7 +227,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;5.4.6 SELU
 
-&emsp;5.5 Loss Functions
+&emsp;5.5 **Loss Functions**
 
 &emsp;&emsp;5.5.1 Sum of Squares
 
@@ -235,13 +235,13 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;5.5.3 Softmax Cross-Entropy
 
-&emsp;5.6 Optimization
+&emsp;5.6 **Optimization**
 
 &emsp;&emsp;5.6.1 Gradient Descent
 
 &emsp;&emsp;5.6.2 Momentum
 
-&emsp;5.7 Regularization
+&emsp;5.7 **Regularization**
 
 &emsp;&emsp;5.7.1 Dataset
 
@@ -251,11 +251,11 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;5.7.4 Optimization
 
-&emsp;5.8 Summary
+&emsp;5.8 **Summary**
 
 ### Chapter 6: Computer Vision
 
-&emsp;6.1 Convolutional Neural Network
+&emsp;6.1 **Convolutional Neural Network**
 
 &emsp;&emsp;6.1.1 Convolution Layer
 
@@ -265,7 +265,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;6.1.4 Upsampling
 
-&emsp;6.2 Prominent Features
+&emsp;6.2 **Prominent Features**
 
 &emsp;&emsp;6.2.1 Local Connectivity
 
@@ -273,11 +273,11 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 &emsp;&emsp;6.2.3 Translation Equivariance
 
-&emsp;6.3 Shortcut Connection
+&emsp;6.3 **Shortcut Connection**
 
-&emsp;6.4 Image Recognition
+&emsp;6.4 **Image Recognition**
 
-&emsp;6.5 Conclusion
+&emsp;6.5 **Conclusion**
 
 ### References
 
