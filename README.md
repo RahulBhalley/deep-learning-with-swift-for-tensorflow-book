@@ -26,8 +26,10 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 ## Table of Contents
 
+<!--
 <details>
   <summary>Show book's contents</summary>
+-->
 
 ### About the Author
 
@@ -281,7 +283,9 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 ### Index
 
+<!--
 </details>
+-->
 
 <hr>
 
@@ -297,8 +301,7 @@ The book covers foundational concepts of machine learning. It also introduces th
 
 This Swift package offers various executable targets listed in [Package.swift](https://github.com/rahulbhalley/deep-learning-with-swift-for-tensorflow-book/blob/main/Package.swift).
 
-<details>
-  <summary>Show all executable targets</summary>
+List of all executable targets:
 
 #### `DifferentiableProgramming`
 - `AdvancedOperators`
@@ -340,8 +343,6 @@ This Swift package offers various executable targets listed in [Package.swift](h
 
 #### `ComputerVision`
 - `ImageRecognition`
-
-</details>
 
 ### Running in Xcode
 
